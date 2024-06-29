@@ -1,0 +1,122 @@
+#homepage header {
+    background: url('../symbols/nnnoise.svg');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.875rem 3.75rem;
+    font-family: 'Trebuchet MS';
+}
+
+#homepage header .logo {
+    text-decoration: none;
+    color: white;
+}
+
+#homepage header .navigation {
+    display: flex;
+    list-style: none;
+}
+
+#homepage header .navigation li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1.875rem;
+    position: relative;
+}
+#homepage header .navigation li a:hover::before{
+    content: '';
+    position: absolute;
+    box-shadow: -20px 0 5px 3px #fff,
+                10px 25px 5px 4px #fff,
+                0 5px 5px 3px #fff531;
+    left: 50%;
+    opacity: 0;
+    animation: appear 1s linear forwards;
+}
+@keyframes appear {
+    100%{opacity: 1}
+}
+
+
+#homepage {
+    display: flex;
+    flex-direction: column;
+}
+
+#homepage section {
+    height: fill;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#homepage section .message {
+    color: white;
+    font-family: 'Inter';
+    padding: 4.0625rem;
+}
+#homepage section .message img{
+    transform: translate(0, 100px) scale(.8)
+}
+#homepage section .message .container {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 37.5rem;
+}
+
+#homepage section .message .container .big {
+    font-style: italic;
+    font-weight: 90;
+    font-size: 3.75rem;
+line-height: 3.625rem;     
+margin-bottom: 0.9375rem;
+}
+
+#homepage section .message .container .small {
+    font-style: normal;
+    font-weight: 90;
+font-size: 1.5625rem;
+line-height: 1.8125rem;
+}
+#homepage section .message .container .small div{
+    margin-bottom: 0.9375rem;
+}
+#homepage section .message .container .smaller a{
+    font-size: 0.8125rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #422fee;
+    position: absolute;
+    transform: translateX(-2.5rem)
+}
+#homepage section .message .container .smaller a:hover::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px; 
+    animation: underline .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    transform: scale(0) translateY(-1.25rem);
+    background: #422fee;
+    box-shadow: 0 -8px 20px 2px #422fee;
+}
+@keyframes underline {
+    100%{width: 100%; transform: scale(1) translateY(0.125rem); }
+}
+
+
+#homepage section .background {
+    flex-grow: 1;
+    position: relative;
+}
+
+#homepage section .background img {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: -0.625rem;
+    z-index: -1;
+}

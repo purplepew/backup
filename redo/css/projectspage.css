@@ -1,0 +1,74 @@
+#projects section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding-top: 6.25rem;
+    position: relative;
+}
+#projects section .project-content{
+    font-family: 'inter';
+    font-weight: bold;
+}
+#projects section .project-content .proj1{
+    margin-bottom: 2.5rem;
+}
+#projects section .project-content .proj1 .title{
+    font-size: 2.1875rem;
+}
+#projects section .project-content .proj1 .subtitle{
+    font-size: 1rem;
+    margin-left: 2.5rem;
+    margin-top: 0.9375rem;
+    display: flex;
+}
+#projects section .project-content .proj1 .subtitle .modal{
+  margin-left: .5rem;
+  font-size: .7rem;
+  padding: .2rem;
+  background: white;
+  color: black;
+}
+#projects section .project-content .proj1 .subtitle .modal input{
+    display: none;
+}
+#projects section .project-content .proj1 .subtitle .modal .content {
+   height: 75%;
+   width: 50%;
+   position: absolute;
+   left: 25.5rem;
+   top: 4rem;
+   background: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   visibility: hidden;
+   background: black;
+   box-shadow: 0 0 25px rgba(225,225,225,.3);
+   color: white;
+}
+#projects section .project-content .proj1 .subtitle .modal .content .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: .5rem 1.5rem;
+    box-sizing: border-box;
+}
+#projects section .project-content .proj1 .subtitle .modal .content .header label{
+    font-size: 1.5rem;
+}
+#projects section .project-content .proj1 .subtitle .modal .content .media{
+    height: 100%;
+    width: 100%;
+}
+
+#projects section .project-content .proj1 .subtitle .modal #btn1:checked ~ .content1{
+    visibility: visible;
+}
+#projects section .project-content .proj1 .subtitle .modal #btn2:checked ~ .content2{
+    visibility: visible;
+}
+#projects section .project-content .proj1 .subtitle .modal #btn3:checked ~ .content3{
+    visibility: visible;
+}
