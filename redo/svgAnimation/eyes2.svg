@@ -1,0 +1,14 @@
+<svg width="249" height="278" viewBox="0 0 249 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="eyes2">
+<rect id="eye" width="249" height="104" fill="black"/>
+<rect id="sclera" x="24" y="30" width="201" height="61" fill="white"/>
+<rect id="pupil" x="115" y="30" width="37" height="38" fill="#EAEE26"/>
+<rect id="lid" width="249" height="30" fill="black"/>
+<g id="tears">
+<rect id="Rectangle 13" x="24" y="104" width="37" height="145" fill="black"/>
+<rect id="Rectangle 14" x="69" y="104" width="37" height="174" fill="black"/>
+<rect id="Rectangle 15" x="114" y="104" width="37" height="79" fill="black"/>
+<rect id="Rectangle 16" x="159" y="104" width="37" height="159" fill="black"/>
+</g>
+</g>
+</svg>

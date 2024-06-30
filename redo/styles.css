@@ -5,28 +5,22 @@
 
 body {
     background: #2f2f2f;
-    height: 400vh;
     overflow-x: hidden;
 }
 html{
     font-size: 16px;
 }
 
+#homepage{
 
-#homepage,
-#projects,
-#about,
-#contacts {
-    height: 100vh;
-    min-height: 32.5rem;
 }
-
 #projects {
     background: #000;
 }
 
 #about {
     background: #000;
+
 }
 
 #contacts {

@@ -1,3 +1,6 @@
+#homepage{
+    height: 40rem;
+}
 #homepage header {
     background: url('../symbols/nnnoise.svg');
     display: flex;
@@ -5,6 +8,7 @@
     align-items: center;
     padding: 1.875rem 3.75rem;
     font-family: 'Trebuchet MS';
+    z-index: 22;
 }
 
 #homepage header .logo {
@@ -23,6 +27,13 @@
     margin: 0 1.875rem;
     position: relative;
 }
+#homepage header .logo:hover::before{
+    content: '';
+    position: absolute;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 0, .4);
+    opacity: 0;
+    animation: appear .7s linear forwards;
+}
 #homepage header .navigation li a:hover::before{
     content: '';
     position: absolute;
@@ -31,7 +42,7 @@
                 0 5px 5px 3px #fff531;
     left: 50%;
     opacity: 0;
-    animation: appear 1s linear forwards;
+    animation: appear .7s linear forwards;
 }
 @keyframes appear {
     100%{opacity: 1}

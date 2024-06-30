@@ -18,8 +18,9 @@ let passed3 = false;
 let attempt = 0;
 
 nameInput.addEventListener('blur', () => {
+    const input = emailInput.value;
     nameMessage.innerHTML = "VALID &#x2713;";
-    passed1 = true;
+    passed1 = true; 
 })
 
 emailInput.addEventListener('blur', () => {
@@ -30,13 +31,14 @@ emailInput.addEventListener('blur', () => {
         passed2 = true;
     }
     else {
-        if (attempt == 0) {
-            emailMessage.innerHTML = "INVALID &#x2717;";
-            passed = false;
-            attempt++;
-        } else {
-            emailMessage.innerHTML += "&#x2717;";
+        emailMessage.innerHTML = "INVALID";
+        passed2 = false;
+        attempt++;
+        if(attempt>0){
+            for(let i=0; i<attempt; i++){
+         emailMessage.innerHTML += "&#x2717;";
 
+            }
         }
     }
 })
@@ -48,7 +50,7 @@ messageInput.addEventListener('blur', () => {
 
 form.addEventListener('submit', function (event) {
     if (passed1 && passed2 && passed3) {
-
+        alert(`Thank you po sa message ${nameInput.value}. babasahin ko po mamaya`)
     } else
         event.preventDefault();
 });
