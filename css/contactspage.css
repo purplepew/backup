@@ -1,0 +1,119 @@
+#contacts {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'inter';
+    align-items: center;
+}
+#contacts .sendMessage{
+    display: flex;
+    flex-direction: column;
+}
+#contacts .sendMessage .labelMessage{
+    color: white;  
+    font-size: 3.25rem;
+    margin-bottom: 1.25rem;
+    font-weight: bold;
+    transform: translateX(5.625);
+}
+#contacts .sendMessage form{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: column;
+}
+#contacts .sendMessage form .container{
+    padding: 0.625rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#contacts .sendMessage form .container span{
+    position: absolute;
+    left: 8rem;
+    top: -1rem;
+    color: red;
+    animation: spanAnim 2s linear forwards;
+}
+@keyframes spanAnim {
+    100%{color: white}
+}
+
+
+#contacts .sendMessage form .container input{
+    font-size: 1.875rem;
+    margin-left: 0.625rem;
+}
+#contacts .sendMessage form .container:nth-child(3) input{
+    font-size: 1.6875rem;
+}
+
+#contacts .sendMessage form label{
+    background: #422fee;
+    padding: 0.625rem;
+    font-weight: bold;
+}
+
+#contacts .sendMessage form .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contacts .sendMessage form .btn input{
+    background: none;
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+#contacts .sendMessage form .btn label{
+    background: none;
+    order: 2;
+ }
+
+
+
+/**submit btn**/
+.btn label, .btn input{
+    cursor: pointer;
+}
+.triangles {
+    fill: none;
+    transform: translateX(-1.875rem);
+}
+.triangles #main, .triangles #back1, .triangles #back2{
+    transition: all 1s ease;
+}
+.btn:hover .triangles #back1{
+    transform: translateX(20%);
+}
+.btn:hover .triangles #back2{
+    transform: translateX(-10%);
+}
+.btn:hover .triangles #main{
+    transform: translateX(5%);
+}
+
+
+#contacts .goodbyes .message{
+    font-size: 12.5rem;
+    color: #422fee;
+    pointer-events: none;
+}
+#contacts .goodbyes .followUs{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#contacts .goodbyes .followUs a{
+    margin-left: 0.625rem;
+}
+
+#contacts .goodbyes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}

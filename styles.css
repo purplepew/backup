@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #2f2f2f;
+    overflow-x: hidden;
+}
+html{
+    font-size: 16px;
+}
+
+#homepage{
+
+}
+#projects {
+    background: #000;
+}
+
+#about {
+    background: #000;
+
+}
+
+#contacts {
+    background: #000;
+}
+
+

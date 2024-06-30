@@ -1,0 +1,34 @@
+
+#projects section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding-top: 6.25rem;
+    position: relative;
+}
+#projects section .project-content{
+    font-family: 'inter';
+    font-weight: bold;
+}
+#projects section .project-content .proj1{
+    margin-bottom: 2.5rem;
+}
+#projects section .project-content .proj1 .title{
+    font-size: 2.1875rem;
+}
+#projects section .project-content .proj1 .subtitle{
+    font-size: 1rem;
+    margin-left: 2.5rem;
+    margin-top: 0.9375rem;
+    display: flex;
+}
+
+#projects section .project-content .proj1 .subtitle a{
+    color: black;
+    background: white;
+    margin-left: .5rem;
+    padding: .2rem;
+    font-size: .8rem;
+    text-decoration: none;
+}

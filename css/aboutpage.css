@@ -1,0 +1,31 @@
+
+#about section {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'inter';
+    padding: 9.375rem 3.125rem;
+}
+#about section .label span{
+    background: #422fee;
+    padding: 1.25rem;   
+    font-weight: bold;  
+    font-size: 2.5rem;  
+    
+}
+#about section .info{
+    color: white;
+    font-weight: bold;
+    width: 25rem;
+}
+#about section .info .name{
+font-size: 3.125rem;
+margin-bottom: 1.25rem;
+}
+#about section .info .info-label{
+    margin-bottom: 3.125rem;
+    font-weight: normal;
+}
+#about section .info .info-label span{
+    font-size: 1.5625rem;
+    font-weight: bold;
+}

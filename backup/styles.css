@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #2f2f2f;
+    height: 400vh;
+    overflow-x: hidden;
+}
+
+#homepage header {
+    background: url('nnnoise.svg');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    font-family: 'Trebuchet MS';
+}
+
+#homepage header .logo {
+    text-decoration: none;
+    color: white;
+}
+
+#homepage header .navigation {
+    display: flex;
+    list-style: none;
+}
+
+#homepage header .navigation li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+    position: relative;
+}
+#homepage header .navigation li a:hover::before{
+    content: '';
+    position: absolute;
+    box-shadow: -20px 0 5px 3px #fff,
+                10px 25px 5px 4px #fff,
+                0 5px 5px 3px #fff531;
+    left: 50%;
+    opacity: 0;
+    animation: appear 1s linear forwards;
+}
+@keyframes appear {
+    100%{opacity: 1}
+}
+
+
+#homepage {
+    display: flex;
+    flex-direction: column;
+}
+
+#homepage section {
+    height: fill;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#homepage section .message {
+    color: white;
+    font-family: 'Inter';
+    padding: 4.0625rem;
+}
+#homepage section .message img{
+    transform: translate(0, 100px) scale(.8)
+}
+#homepage section .message .container {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+}
+
+#homepage section .message .container .big {
+    font-style: italic;
+    font-weight: 90;
+    font-size: 60px;
+    line-height: 58px;
+    margin-bottom: 15px;
+}
+
+#homepage section .message .container .small {
+    font-style: normal;
+    font-weight: 90;
+    font-size: 25px;
+    line-height: 29px;
+}
+#homepage section .message .container .small div{
+    margin-bottom: 15px;
+}
+#homepage section .message .container .smaller a{
+    font-size: 13;
+    font-weight: bold;
+    text-decoration: none;
+    color: #422fee;
+    position: absolute;
+    transform: translateX(-40px)
+}
+#homepage section .message .container .smaller a:hover::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px; 
+    animation: underline .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    transform: scale(0) translateY(-20px);
+    background: #422fee;
+    box-shadow: 0 -8px 20px 2px #422fee;
+}
+@keyframes underline {
+    100%{width: 100%; transform: scale(1) translateY(2px); }
+}
+
+
+#homepage section .background {
+    flex-grow: 1;
+    position: relative;
+}
+
+#homepage section .background img {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    z-index: -1;
+}
+
+
+#projects section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding-top: 100px;
+}
+#projects section .project-content{
+    font-family: 'inter';
+    font-weight: bold;
+}
+#projects section .project-content .proj1{
+    margin-bottom: 40px;
+}
+#projects section .project-content .proj1 .title{
+    font-size: 35px;
+}
+#projects section .project-content .proj1 .subtitle{
+    font-size: 16px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+#projects section .project-content .proj1 .subtitle span{
+    background: white;
+    color: black;
+    padding: 2.5px 5px;
+    font-size: 10px;
+}
+
+#about section {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'inter';
+    padding: 150px 50px;
+}
+#about section .label span{
+    background: #422fee;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 40px;
+}
+#about section .info{
+    color: white;
+    font-weight: bold;
+    width: 400px;
+}
+#about section .info .name{
+font-size: 50px;
+margin-bottom: 20px;
+}
+#about section .info .info-label{
+    margin-bottom: 50px;
+    font-weight: normal;
+}
+#about section .info .info-label span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#contacts {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'inter';
+    align-items: center;
+}
+#contacts .sendMessage{
+    display: flex;
+    flex-direction: column;
+}
+#contacts .sendMessage .labelMessage{
+    color: white;  
+    font-size: 52px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transform: translateX(90px);
+}
+#contacts .sendMessage form{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: column;
+}
+#contacts .sendMessage form .container{
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contacts .sendMessage form .container input{
+    font-size: 30px;
+    margin-left: 10px;
+}
+#contacts .sendMessage form .container:nth-child(3) input{
+    font-size: 27px;
+}
+
+#contacts .sendMessage form label{
+    background: #422fee;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#contacts .sendMessage form .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contacts .sendMessage form .btn input{
+    background: none;
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+#contacts .sendMessage form .btn label{
+    background: none;
+    order: 2;
+ }
+/**submit btn**/
+.btn label, .btn input{
+    cursor: pointer;
+}
+.triangles {
+    fill: none;
+    transform: translateX(-30px);
+}
+.triangles #main, .triangles #back1, .triangles #back2{
+    transition: all 1s ease;
+}
+.btn:hover .triangles #back1{
+    transform: translateX(20%);
+}
+.btn:hover .triangles #back2{
+    transform: translateX(-10%);
+}
+.btn:hover .triangles #main{
+    transform: translateX(5%);
+}
+
+
+#contacts .goodbyes .message{
+    font-size: 200px;
+    color: #422fee;
+    pointer-events: none;
+}
+#contacts .goodbyes .followUs{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#contacts .goodbyes .followUs a{
+    margin-left: 10px;
+}
+
+#contacts .goodbyes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+
+#homepage,
+#projects,
+#about,
+#contacts {
+    height: 100vh;
+    min-height: 520px;
+}
+
+#projects {
+    background: #000;
+}
+
+#about {
+    background: #000;
+}
+
+#contacts {
+    background: #000;
+}
+
